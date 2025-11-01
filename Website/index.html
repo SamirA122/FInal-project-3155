@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 21 - Group Project</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,26 +12,16 @@
 <header>
     <div class="header-content">
         <h1>Team 21</h1>
-        <!-- Team logo SVG -->
-        <svg class="team-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="150" height="150">
-            <defs>
-                <linearGradient id="grad21" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#7B68EE;stop-opacity:1" />
-                </linearGradient>
-            </defs>
-            <circle cx="100" cy="100" r="90" fill="url(#grad21)" opacity="0.9"/>
-            <text x="100" y="90" font-family="Poppins" font-size="48" font-weight="bold" fill="white" text-anchor="middle">21</text>
-            <text x="100" y="120" font-family="Poppins" font-size="16" fill="white" text-anchor="middle">TEAM</text>
-            <path d="M 60 140 L 140 140" stroke="white" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="60" cy="140" r="5" fill="white"/>
-            <circle cx="100" cy="140" r="5" fill="white"/>
-            <circle cx="140" cy="140" r="5" fill="white"/>
-        </svg>
+        <!-- Team logo image (replaces SVG) -->
+        <img src="team21_logo.png"
+             alt="Team 21 Logo"
+             class="team-logo"
+             width="160"
+             height="160"
+             style="display:block; margin: 0 auto;">
         <p class="team-tagline">Innovation Through Collaboration</p>
     </div>
 
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
@@ -39,7 +29,6 @@
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Yousef's Card -->
     <div class="card yousef-card">
@@ -55,30 +44,17 @@
         <div id="moodboard1" class="moodboard">
             <h3>My CS Inspirations</h3>
             <div class="moodboard-grid">
-                <div class="mood-item">
-                    <span class="mood-icon">🐍</span>
-                    <span class="mood-label">Python</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">⚛️</span>
-                    <span class="mood-label">Next.js</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">💼</span>
-                    <span class="mood-label">FinTech</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">👨‍👦</span>
-                    <span class="mood-label">My Dad - Hard Working Immigrant</span>
-                </div>
+                <div class="mood-item"><span class="mood-icon">🐍</span><span class="mood-label">Python</span></div>
+                <div class="mood-item"><span class="mood-icon">⚛️</span><span class="mood-label">Next.js</span></div>
+                <div class="mood-item"><span class="mood-icon">💼</span><span class="mood-label">FinTech</span></div>
+                <div class="mood-item"><span class="mood-icon">👨‍👦</span><span class="mood-label">My Dad - Hard Working Immigrant</span></div>
                 <div class="mood-item meme-item">
                     <img src="https://i.imgur.com/9akRtxC.jpg" alt="Programming Meme" class="meme-img">
                     <span class="mood-label">"It works on my machine"</span>
                 </div>
                 <div class="mood-item">
                     <a href="https://github.com/YousefAyesh" target="_blank" class="github-link">
-                        <span class="mood-icon">🔗</span>
-                        <span class="mood-label">My GitHub</span>
+                        <span class="mood-icon">🔗</span><span class="mood-label">My GitHub</span>
                     </a>
                 </div>
             </div>
@@ -99,30 +75,17 @@
         <div id="moodboard2" class="moodboard">
             <h3>My CS Inspirations</h3>
             <div class="moodboard-grid">
-                <div class="mood-item">
-                    <span class="mood-icon">🐍</span>
-                    <span class="mood-label">Python</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">⚛️</span>
-                    <span class="mood-label">Next.js</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">⚽</span>
-                    <span class="mood-label">Soccer & Code</span>
-                </div>
-                <div class="mood-item">
-                    <span class="mood-icon">🎯</span>
-                    <span class="mood-label">Barack Obama - First Black President</span>
-                </div>
+                <div class="mood-item"><span class="mood-icon">🐍</span><span class="mood-label">Python</span></div>
+                <div class="mood-item"><span class="mood-icon">⚛️</span><span class="mood-label">Next.js</span></div>
+                <div class="mood-item"><span class="mood-icon">⚽</span><span class="mood-label">Soccer & Code</span></div>
+                <div class="mood-item"><span class="mood-icon">🎯</span><span class="mood-label">Barack Obama - First Black President</span></div>
                 <div class="mood-item meme-item">
                     <img src="https://i.imgur.com/3gFwh8z.jpg" alt="Debugging Meme" class="meme-img">
                     <span class="mood-label">"99 bugs in the code..."</span>
                 </div>
                 <div class="mood-item">
                     <a href="https://github.com/SamirA122" target="_blank" class="github-link">
-                        <span class="mood-icon">🔗</span>
-                        <span class="mood-label">My GitHub</span>
+                        <span class="mood-icon">🔗</span><span class="mood-label">My GitHub</span>
                     </a>
                 </div>
             </div>
@@ -130,7 +93,7 @@
     </div>
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
+<!-- Team vision/mission statement section -->
 <div id="vision" class="container vision-container" style="display: none;">
     <div class="vision-content">
         <h2>Our Mission Statement</h2>
@@ -138,26 +101,10 @@
 
         <h3>Our Core Values</h3>
         <div class="values-grid">
-            <div class="value-card">
-                <span class="value-icon">💡</span>
-                <h4>Innovation</h4>
-                <p>Constantly exploring new technologies and creative solutions</p>
-            </div>
-            <div class="value-card">
-                <span class="value-icon">🤝</span>
-                <h4>Collaboration</h4>
-                <p>Working together to achieve more than we could alone</p>
-            </div>
-            <div class="value-card">
-                <span class="value-icon">📚</span>
-                <h4>Continuous Learning</h4>
-                <p>Always growing our skills and knowledge base</p>
-            </div>
-            <div class="value-card">
-                <span class="value-icon">⭐</span>
-                <h4>Excellence</h4>
-                <p>Striving for quality in every line of code we write</p>
-            </div>
+            <div class="value-card"><span class="value-icon">💡</span><h4>Innovation</h4><p>Constantly exploring new technologies and creative solutions</p></div>
+            <div class="value-card"><span class="value-icon">🤝</span><h4>Collaboration</h4><p>Working together to achieve more than we could alone</p></div>
+            <div class="value-card"><span class="value-icon">📚</span><h4>Continuous Learning</h4><p>Always growing our skills and knowledge base</p></div>
+            <div class="value-card"><span class="value-icon">⭐</span><h4>Excellence</h4><p>Striving for quality in every line of code we write</p></div>
         </div>
 
         <h3>Our Goals</h3>
@@ -171,53 +118,17 @@
     </div>
 </div>
 
-<!-- Team rules section (hidden by default) -->
+<!-- Team rules section -->
 <div id="rules" class="container rules-container" style="display: none;">
     <div class="rules-content">
         <h2>Team 21 Rules & Guidelines</h2>
         <div class="rules-list">
-            <div class="rule-item">
-                <span class="rule-number">01</span>
-                <div class="rule-text">
-                    <h4>Communication First</h4>
-                    <p>Always communicate openly and respond to team messages within 24 hours</p>
-                </div>
-            </div>
-            <div class="rule-item">
-                <span class="rule-number">02</span>
-                <div class="rule-text">
-                    <h4>Code Quality</h4>
-                    <p>Write clean, commented code and follow agreed-upon naming conventions</p>
-                </div>
-            </div>
-            <div class="rule-item">
-                <span class="rule-number">03</span>
-                <div class="rule-text">
-                    <h4>Git Discipline</h4>
-                    <p>Always work on separate branches and create pull requests for review</p>
-                </div>
-            </div>
-            <div class="rule-item">
-                <span class="rule-number">04</span>
-                <div class="rule-text">
-                    <h4>Meeting Attendance</h4>
-                    <p>Attend all scheduled team meetings or notify in advance if unable</p>
-                </div>
-            </div>
-            <div class="rule-item">
-                <span class="rule-number">05</span>
-                <div class="rule-text">
-                    <h4>Respect Deadlines</h4>
-                    <p>Complete assigned tasks on time or communicate early if help is needed</p>
-                </div>
-            </div>
-            <div class="rule-item">
-                <span class="rule-number">06</span>
-                <div class="rule-text">
-                    <h4>Support Each Other</h4>
-                    <p>Help team members when they're stuck and celebrate wins together</p>
-                </div>
-            </div>
+            <div class="rule-item"><span class="rule-number">01</span><div class="rule-text"><h4>Communication First</h4><p>Always communicate openly and respond to team messages within 24 hours</p></div></div>
+            <div class="rule-item"><span class="rule-number">02</span><div class="rule-text"><h4>Code Quality</h4><p>Write clean, commented code and follow naming conventions</p></div></div>
+            <div class="rule-item"><span class="rule-number">03</span><div class="rule-text"><h4>Git Discipline</h4><p>Always work on separate branches and create pull requests for review</p></div></div>
+            <div class="rule-item"><span class="rule-number">04</span><div class="rule-text"><h4>Meeting Attendance</h4><p>Attend meetings or notify the team if you can’t</p></div></div>
+            <div class="rule-item"><span class="rule-number">05</span><div class="rule-text"><h4>Respect Deadlines</h4><p>Complete assigned tasks on time or communicate early if help is needed</p></div></div>
+            <div class="rule-item"><span class="rule-number">06</span><div class="rule-text"><h4>Support Each Other</h4><p>Help teammates when they're stuck and celebrate wins together</p></div></div>
         </div>
     </div>
 </div>
@@ -226,18 +137,6 @@
     <p>&copy; 2025 Team 21 - Created by Yousef Ayesh & Samir Abukar</p>
 </footer>
 
-<footer>
-    <p>&copy; 2025 Team 21 - Created by Yousef Ayesh & Samir Abukar</p>
-</footer>
-
-<footer>
-    <p>&copy; 2025 Team 21 - Created by Yousef Ayesh & Samir Abukar</p>
-</footer>
-
-<footer>
-    <p>&copy; 2025 Team 21 - Created by Yousef Ayesh & Samir Abukar</p>
-</footer>
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
+<script src="script.js"></script>
 </body>
 </html>
