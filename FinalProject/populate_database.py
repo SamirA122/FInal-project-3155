@@ -44,11 +44,26 @@ def populate_resources():
         {"item": "Pickles", "amount": 35},
     ]
     
+    # Get all existing resources first
+    existing_resources = []
+    try:
+        response = requests.get(f"{BASE_URL}/resources")
+        if response.status_code == 200:
+            existing_resources = response.json()
+    except:
+        pass
+    
+    existing_items = {r['item']: r for r in existing_resources}
+    
     created_resources = []
     for resource in resources:
-        response = requests.post(f"{BASE_URL}/resources", json=resource)
-        if print_response(f"Creating Resource: {resource['item']}", response):
-            created_resources.append(response.json())
+        if resource['item'] in existing_items:
+            print(f"⏭️  Resource '{resource['item']}' already exists, skipping...")
+            created_resources.append(existing_items[resource['item']])
+        else:
+            response = requests.post(f"{BASE_URL}/resources", json=resource)
+            if print_response(f"Creating Resource: {resource['item']}", response):
+                created_resources.append(response.json())
     
     return created_resources
 
