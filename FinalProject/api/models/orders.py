@@ -34,4 +34,4 @@ class Order(Base):
     order_details = relationship("OrderDetail", back_populates="order", cascade="all, delete-orphan")
     reviews = relationship("Review", back_populates="order", cascade="all, delete-orphan")
     promo_code = relationship("PromotionalCode", back_populates="orders")
-    payment = relationship("Payment", back_populates="order")
+    payment = relationship("Payment", foreign_keys=[payment_id], uselist=False)

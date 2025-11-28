@@ -29,4 +29,4 @@ class Payment(Base):
     payment_status = Column(Enum(PaymentStatus), nullable=False, server_default=PaymentStatus.PENDING.value)
     payment_date = Column(DATETIME, nullable=False, server_default=str(datetime.now()))
 
-    order = relationship("Order", back_populates="payment")
+    order = relationship("Order", foreign_keys=[order_id], uselist=False)
