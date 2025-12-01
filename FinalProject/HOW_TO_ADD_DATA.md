@@ -2,7 +2,7 @@
 
 There are several ways to add data to your database:
 
-## Method 1: Using the Populate Script (Easiest) ⭐
+## Method 1: Using the Populate Script 
 
 I've created a script that will automatically add sample data:
 
